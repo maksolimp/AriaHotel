@@ -1,0 +1,50 @@
+.ba-rooms{
+	text-align: center;
+	background-color: #FFF;
+	margin-top: 59px;
+	&__title{
+		font-size: 35px;
+		line-height: 1;
+		padding: 21px 0 28px;
+	}
+	&__price{
+		font-size: 14px;
+		line-height: 1;
+		font-weight: 300;
+		padding-top: 19px;
+		& span{
+			font-size: 28px;
+			line-height: 1.5;
+			color: #5A477D;
+			font-weight: 700;
+		}
+	}
+	&__text{
+		color: #878787;
+		font-size: 14px;
+		font-weight: 300;
+		margin: 27px 30px 0 28px;
+		padding: 30px 0 50px;
+		border-top: 1px solid #878787;
+	}
+}
+.ba-pagination{
+	padding: 50px 0 78px;
+	border-top: 1px solid #bcbcbc;
+	margin-top: 50px;
+	&__list{
+		& li{
+			border: 1px solid #60606e;
+			display: inline-block;
+			padding: 15px;
+			margin-right: 24px;
+		}
+
+	}
+	&__button{
+		background-color: #5A477D;
+		padding: 17px 0 15px;
+		text-align: center;
+		width: 111px;
+	}
+}

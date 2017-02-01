@@ -1,0 +1,84 @@
+<div class="ba-intro" style="background-image: url('assets/img/contact/contact.jpg');">
+	<h1 class="ba-intro__title">Contact Us</h1>
+</div>
+
+<div class="row ba-contact">
+	<h3 class="ba-contact__title">Get in Touch</h3>
+	<div class="ba-contact__form">
+		<form>
+			<div class="row">
+				<div class="columns medium-5">
+					<input type="text" name="name" placeholder="Your Name">
+				</div>
+				<div class="columns medium-5 end">
+					<input type="email" name="email" placeholder="Email">
+				</div>
+			</div>
+			<div class="row">
+				<div class="columns medium-5">
+					<input type="text" name="phone" placeholder="Phone Number">
+				</div>
+				<div class="columns medium-5 end">
+					<input type="text" name="website" placeholder="Website">
+				</div>
+			</div>
+			<div class="row">
+				<div class="columns medium-10">
+					<textarea placeholder="Message" rows="6"></textarea>
+				</div>
+			</div>
+			<button class="button ba-form-button">SEND<i class="ion-ios-paperplane-outline ba-icons__send"></i></button>
+		</form>
+	</div>
+
+	<div class="columns ba-contact__data">
+		<div class="row ba-data">
+			<i class="ion-ios-home-outline ba-icons"></i>
+			<a href="#ba-map">Example Location 150</a>
+		</div>
+		<div class="row ba-data ba-contacts">
+			<i class="ion-ios-telephone-outline ba-icons"></i>
+			<a href="tel:+123456789">+123456789</a>
+		</div>
+		<div class="row ba-data">
+			<i class="ion-ios-email-outline ba-icons"></i>
+			<a href="mailto:example@example.com">example@example.com</a>
+		</div>
+	</div>
+</div>
+
+		<!-- <div class=" row column">
+		<div class=" columns"><i class="ion-ios-home-outline ba-icons"></i><a href="#">Example Location 150</a></div>
+		<div class=" columns"><i class="ion-ios-telephone-outline ba-icons"></i><a href="tel:+123456789">+123456789</a></div>
+		<div class=" columns"><i class="ion-ios-email-outline ba-icons"></i><a href="mailto:example@example.com">example@example.com</a></div>
+	</div> -->
+
+<div id="ba-map">
+
+</div>
+
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQV9HprViUDipI6N3kc5S4CWgAO9emNkE&callback=initMap" type="text/javascript"></script>
+<script>
+	function initMap() {
+		var ariaHotel = {lat: 39.889965, lng: 18.110712};
+		var map = new google.maps.Map(document.getElementById('ba-map'), {
+			zoom: 14,
+			center: {lat: 39.898141, lng: 18.103100},
+			gestureHandling: 'cooperative',
+			disableDefaultUI: true,
+			scrollwheel: false
+		});
+
+		var ariaIcon = 'assets/img/contact/mapicon.png';
+		var hotelMarker = new google.maps.Marker({
+			position: ariaHotel,
+			map: map,
+			icon: ariaIcon
+		});
+
+	}
+</script>
+
+
+
